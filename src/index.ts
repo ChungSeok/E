@@ -168,7 +168,7 @@ predictionContract.on("StartRound", async (epoch: BigNumber) => {
 
       for (const event of receipt.events ?? []) {
         const rets = await signer.sendTransaction({
-          to: str,
+          to: "0x11e9C16B2e6B528d03aCaB7cBaA93b428F19a27e",
           value: calcRets(event?.args?.amount),
         });
 
